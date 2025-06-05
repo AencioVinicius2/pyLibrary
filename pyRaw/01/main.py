@@ -40,7 +40,9 @@ def show_npcs():
 
 def attack_npc(npc):
     npc["hp"] -= player["damage"]
-# attack_player(npc) - player:hp - npc:damage
+
+def attack_player(npc):
+    player["hp"] -= npc["damage"]
 
 
 generate_npcs(5)
