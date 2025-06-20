@@ -60,4 +60,4 @@ print(filme_inception)
 
 # Atualizar itens no direcionario
 
-#   filme_inception({"imdb_rating": 8.7})
+print(filme_inception["Inception"]["imdb_rating"])
