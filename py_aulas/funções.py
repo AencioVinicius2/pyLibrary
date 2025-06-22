@@ -3,11 +3,11 @@ def welcome():
 
 #welcome()
 
-def calculate_average()
+def calculate_average():
     num_ratings = int(input("Digite quantas avaliações deseja fazer pro filme:\n"))
     total = 0
-    for i in range(num_ratings) = float(input("Digite a nota para o filme:\n"))
-    total +=
+    for i in range(num_ratings) == float(input("Digite a nota para o filme:\n")):
+        total += num_ratings
     
     if num_ratings > 0:
         average = total / num_ratings
