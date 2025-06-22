@@ -7,7 +7,7 @@
 - Os argumentos são passados como um dicionário
 """
 # 1 - Soma de números
-def sum(num*)
+def sum(*num):
     sum_total = 0
     for n in num:
         sum_total += n
@@ -17,7 +17,7 @@ sum(7)
 
 # 2 - Apresentação de curso
 
-def apresentation(**data)
+def apresentation(**data):
     for key, value in data.items():
         print(f"{key} - {value}")
         
