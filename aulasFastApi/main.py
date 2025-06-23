@@ -6,12 +6,12 @@ jogadores = {
     1: {
         "nome":"Rony",
         "idade":26,
-        "Time":"Palmeiras"
+        "time":"Palmeiras"
     },
     2: {
         "nome":"Gustavo",
         "idade":29,
-        "Time":"Palmeiras"
+        "time":"Palmeiras"
     }
 }
 ##uvicorn main:app --reload
@@ -24,4 +24,13 @@ def inicio():
 def get_jogador(id_jogador:int):
     return jogadores[id_jogador]
 
+@app.get("/get-jogador-time")
+def get_jogador_time(time:str):
+    for jogador_id in jogadores:
+        if jogadores[jogador_id]["time"] == time:
+            return jogadores[jogador_id]
+    return {"Dados": "Não foi encontrado"}
+    
+
 #get-jogadores/?id=1 - Query Parameter
+#get-jogador-time?time="nometime"
